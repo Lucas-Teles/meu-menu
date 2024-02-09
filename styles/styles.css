@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.content {
+  background-color: azure;
+  border-radius: 10px;
+  width: 80%;
+  height: 50%;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.content::before {
+  content: "";
+  position: absolute;
+  background-color: burlywood;
+  width: 40%;
+  height: 100%;
+}
+
+.first-content {
+  display: flex;
+}
+
+.first-column {
+  text-align: center;
+  flex: 1 0 auto;
+  z-index: 10;
+}
+
+.second-column {
+  flex: 2 0 auto;
+}
+
+.list-social-media {
+  display: flex;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.second-content {
+  position: absolute;
+  display: none;
+}
